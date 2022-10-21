@@ -1,7 +1,7 @@
 {
   "tasks": {
     "install": "deno cache --unstable --node-modules-dir ./dep.mjs",
-    "dev": "deno task install && deno run -A --unstable npm:vite"
+    "dev": "deno task install && deno run -A --unstable npm:vite",
     "build": "deno task install && deno run -A --unstable npm:vite build",
     "preview": "deno run -A --unstable npm:vite preview",
     "serve": "deno run --allow-net --allow-read https://deno.land/std@0.157.0/http/file_server.ts dist/"

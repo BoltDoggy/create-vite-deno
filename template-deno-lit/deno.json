@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "dev": "deno run -A --unstable --node-modules-dir npm:vite",
-    "build": "deno run -A --unstable --node-modules-dir npm:vite build"
+    "install": "deno cache --unstable --node-modules-dir ./dep.mjs",
+    "dev": "deno task install && deno run -A --unstable npm:vite",
+    "build": "deno task install && deno run -A --unstable npm:vite build"
   }
 }
